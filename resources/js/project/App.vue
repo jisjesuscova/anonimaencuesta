@@ -151,6 +151,164 @@
               Negativo
             </label>
           </div>
+
+          <p class="card-text" style="margin-top: 30px;"><hr></p>
+          <h3 class="card-title"> 5 - ¿Cómo evalúas tu relación con jefe directo, ante conflictos en la sucursal?</h3>
+          <p class="card-text" style="margin-top: 50px;"><hr></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_1" value="1">
+            <label class="form-check-label" for="exampleRadios1">
+              Excelente
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_2" value="2">
+            <label class="form-check-label" for="exampleRadios1">
+              Bueno
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_3" value="3">
+            <label class="form-check-label" for="exampleRadios1">
+              Regular
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_4" value="4">
+            <label class="form-check-label" for="exampleRadios1">
+              Deficiente
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_5" value="5">
+            <label class="form-check-label" for="exampleRadios1">
+              Negativo
+            </label>
+          </div>
+
+          <p class="card-text" style="margin-top: 30px;"><hr></p>
+          <h3 class="card-title"> 6 - ¿Cómo evalúas el equilibrio entre tu vida laboral y personal?</h3>
+          <p class="card-text" style="margin-top: 50px;"><hr></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_1" value="1">
+            <label class="form-check-label" for="exampleRadios1">
+              Excelente
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_2" value="2">
+            <label class="form-check-label" for="exampleRadios1">
+              Bueno
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_3" value="3">
+            <label class="form-check-label" for="exampleRadios1">
+              Regular
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_4" value="4">
+            <label class="form-check-label" for="exampleRadios1">
+              Deficiente
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_5" value="5">
+            <label class="form-check-label" for="exampleRadios1">
+              Negativo
+            </label>
+          </div>
+
+          <p class="card-text" style="margin-top: 30px;"><hr></p>
+          <h3 class="card-title"> 7 - ¿Tu jornada laboral catual te permite compatibilizar con tu vida personal?</h3>
+          <p class="card-text" style="margin-top: 50px;"><hr></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_1" value="1">
+            <label class="form-check-label" for="exampleRadios1">
+              Totalmente de acuerdo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_2" value="2">
+            <label class="form-check-label" for="exampleRadios1">
+              De acuerdo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_3" value="3">
+            <label class="form-check-label" for="exampleRadios1">
+              Ni de acuerdo ni en descuerdo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_4" value="4">
+            <label class="form-check-label" for="exampleRadios1">
+              En desacuerdo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_5" value="5">
+            <label class="form-check-label" for="exampleRadios1">
+              Totalmente en desacuerdo
+            </label>
+          </div>
+
+          <p class="card-text" style="margin-top: 30px;"><hr></p>
+          <h3 class="card-title"> 8 - ¿Te gustaría participar en capacitaciones de alguno de los siguientes aspectos? Enumera del más importante al menos importante, siendo (1) el más importante y (3) el menos importante.</h3>
+          <p class="card-text" style="margin-top: 50px;"><hr></p>
+          <h4 style="font-size: 16px;">
+            - Mantención
+          </h4>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_1_1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_1_2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_1_3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <p class="card-text"><hr></p>
+          <h4 style="font-size: 16px;">
+            - Resolución de Conflictos
+          </h4>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_2_1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_2_2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_2_3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <p class="card-text"><hr></p>
+          <h4 style="font-size: 16px;">
+            - Sistema Intranet
+          </h4>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_3_1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_3_2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_3_3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <p class="card-text"><hr></p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_4_1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">No me interesa participar en capacitaciones</label>
+          </div>
         </div>
       </div>
     </div>
