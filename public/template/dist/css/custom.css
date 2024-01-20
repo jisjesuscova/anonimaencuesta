@@ -1,0 +1,27 @@
+#home_logo {
+    width: 60% !important;
+    padding-top: 190px !important;
+}
+
+#login_logo {
+    width: 30% !important;
+}
+
+a.nav-link {
+    color: #fff !important;
+}
+
+a.nav-link.active {
+    color: #000 !important;
+}
+
+.o-pag__link--current {
+    pointer-events: none;
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff;
+}
+
+a.bar-code {
+    color: #000 !important;
+}

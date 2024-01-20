@@ -1,0 +1,20 @@
+#home_logo {
+    width: 30% !important;
+    padding-top: 190px !important;
+}
+
+#login_logo {
+    width: 30% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    #home_soon_words {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #home_soon_words {
+      font-size: 80px;
+    }
+}
