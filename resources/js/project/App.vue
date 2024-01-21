@@ -8,7 +8,7 @@
       </div>
     </div>
     <hr>
-    <div class="container" v-if="is_active">
+    <div class="container" v-if="is_active == true">
       <div class="alert alert-danger" role="alert">
         La encuesta a continuación es completamente anónima.
       </div>
@@ -347,7 +347,7 @@
       </div>
       
     </div>
-    <div class="container" v-if="is_active">
+    <div class="container" v-if="is_active == false">
       <div class="alert alert-danger" role="alert">
         El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
       </div>
