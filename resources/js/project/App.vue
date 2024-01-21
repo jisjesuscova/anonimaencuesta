@@ -311,7 +311,7 @@
           </div>
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
-          <h3 class="card-title"> 9 - Proporciona cualquier comwentario adicional que puedas tener sobre tu experiencia laboral y cómo podríamos mejorar en:</h3>
+          <h3 class="card-title"> 9 - Proporciona cualquier comentario adicional que puedas tener sobre tu experiencia laboral y cómo podríamos mejorar en:</h3>
           <p class="card-text" style="margin-top: 5px;"><hr></p>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Recursos Humanos</label>
@@ -408,7 +408,7 @@ export default {
           alert("La respuesta de la pregunta N° 7 es obligatoria por favor rellenarla.");
         }
 
-        if (!this.q8_1 || !this.q8_2 || !this.q8_3) {
+        if ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4) {
           alert("La respuesta de la pregunta N° 8 es obligatoria por favor rellenarla.");
         }
       }
@@ -418,7 +418,7 @@ export default {
       this.formIsValid = true; // Restablecer la bandera
 
       // Verificar cada campo, aquí puedes agregar más campos según sea necesario
-      if (!this.q1 || !this.q2 || !this.q3 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || !this.q8_1 || !this.q8_2 || !this.q8_3) {
+      if (!this.q1 || !this.q2 || !this.q3 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4)) {
         this.formIsValid = false;
       }
 
@@ -429,27 +429,14 @@ export default {
 
       const formData = new FormData();
 
-      formData.append("q1", this.q1);
-      formData.append("q2", this.q2);
-      formData.append("q3", this.q3);
-      formData.append("q4", this.q4);
-      formData.append("q5", this.q5);
-      formData.append("q6", this.q6);
-      formData.append("q7", this.q7);
-      formData.append("q8_1", this.q8_1);
-      formData.append("q8_2", this.q8_2);
-      formData.append("q8_3", this.q8_3);
-      formData.append("q9_1", this.q9_1);
-      formData.append("q9_2", this.q9_2);
-      formData.append("q9_3", this.q9_3);
-      formData.append("q9_4", this.q9_4);
-      formData.append("q9_5", this.q9_5);
-      formData.append("q9_6", this.q9_6);
-      // ... Agrega más campos al formData según sea necesario
+      formData.append("user_id", 1);
+      formData.append("poll_id", 1);
+      formData.append("question_id", 1);
+      formData.append("answer", this.q1);
 
       try {
         const response = await axios.post(
-          "https://jisparking.com/api/poll/store?api_token=" + api_token,
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
           formData,
           {
             headers: {
