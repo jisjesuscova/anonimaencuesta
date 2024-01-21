@@ -349,7 +349,9 @@
     </div>
     <div class="container" v-if="is_active == 0">
       <div class="alert alert-danger" role="alert">
-        El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
+        <h1>
+          El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
+        </h1>
       </div>
     </div>
   </div>
