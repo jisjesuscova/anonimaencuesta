@@ -401,8 +401,8 @@ export default {
       formData.append("poll_id", 1);
 
       try {
-        const response = await axios.post(
-          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+        const response = await axios.get(
+          "https://jisparking.com/api/worker_poll/check?api_token=" + api_token,
           formData,
           {
             headers: {
