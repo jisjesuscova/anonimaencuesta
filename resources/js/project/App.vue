@@ -570,64 +570,70 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
-      formData.append("poll_id", 1);
-      formData.append("question_id", 81);
-      formData.append("answer", this.q8_1);
+      if (!this.q8_4) {
+        formData.append("user_id", 1);
+        formData.append("poll_id", 1);
+        formData.append("question_id", 81);
+        formData.append("answer", this.q8_1);
 
-      try {
-        const response = await axios.post(
-          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
-        console.log("Encuesta enviada correctamente:", response);
-      } catch (error) {
-        console.error("Error al guardar la encuesta:", error);
-      }
-      
-      formData.append("user_id", 1);
-      formData.append("poll_id", 1);
-      formData.append("question_id", 82);
-      formData.append("answer", this.q8_2);
-
-      try {
-        const response = await axios.post(
-          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
-        console.log("Encuesta enviada correctamente:", response);
-      } catch (error) {
-        console.error("Error al guardar la encuesta:", error);
+        try {
+          const response = await axios.post(
+            "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          );
+          console.log("Encuesta enviada correctamente:", response);
+        } catch (error) {
+          console.error("Error al guardar la encuesta:", error);
+        }
       }
 
-      formData.append("user_id", 1);
-      formData.append("poll_id", 1);
-      formData.append("question_id", 83);
-      formData.append("answer", this.q8_3);
+      if (!this.q8_4) {
+        formData.append("user_id", 1);
+        formData.append("poll_id", 1);
+        formData.append("question_id", 82);
+        formData.append("answer", this.q8_2);
 
-      try {
-        const response = await axios.post(
-          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
-        console.log("Encuesta enviada correctamente:", response);
-      } catch (error) {
-        console.error("Error al guardar la encuesta:", error);
+        try {
+          const response = await axios.post(
+            "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          );
+          console.log("Encuesta enviada correctamente:", response);
+        } catch (error) {
+          console.error("Error al guardar la encuesta:", error);
+        }
+      }
+
+      if (!this.q8_4) {
+        formData.append("user_id", 1);
+        formData.append("poll_id", 1);
+        formData.append("question_id", 83);
+        formData.append("answer", this.q8_3);
+
+        try {
+          const response = await axios.post(
+            "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          );
+          console.log("Encuesta enviada correctamente:", response);
+        } catch (error) {
+          console.error("Error al guardar la encuesta:", error);
+        }
       }
 
       formData.append("user_id", 1);
