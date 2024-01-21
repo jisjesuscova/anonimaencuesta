@@ -351,7 +351,7 @@
       <div class="alert alert-danger" role="alert">
         <h3>
           <center>
-            El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
+            Tu respuesta ya fue enviada. Muchas gracias.
           </center>
         </h3>
       </div>
