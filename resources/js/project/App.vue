@@ -306,8 +306,8 @@
           </div>
           <p class="card-text"><hr></p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_4_1" value="option1">
-            <label class="form-check-label" for="inlineRadio83">No me interesa participar en capacitaciones</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions84" id="q8_4_1" value="option4" v-model="q8_4">
+            <label class="form-check-label" for="inlineRadio84">No me interesa participar en capacitaciones</label>
           </div>
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
@@ -364,6 +364,7 @@ export default {
       q8_1: null,
       q8_2: null,
       q8_3: null,
+      q8_4: null,
       q9_1: null,
       q9_2: null,
       q9_3: null,
@@ -613,6 +614,26 @@ export default {
       formData.append("poll_id", 1);
       formData.append("question_id", 83);
       formData.append("answer", this.q8_3);
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log("Encuesta enviada correctamente:", response);
+      } catch (error) {
+        console.error("Error al guardar la encuesta:", error);
+      }
+
+      formData.append("user_id", 1);
+      formData.append("poll_id", 1);
+      formData.append("question_id", 84);
+      formData.append("answer", this.q8_4);
 
       try {
         const response = await axios.post(
