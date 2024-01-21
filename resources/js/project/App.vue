@@ -20,31 +20,31 @@
           <h3 class="card-title"> 1 - ¿Como calificarías el ambiente de trabajo con tus(s) compañeros(s) en tu sucursal?</h3>
           <p class="card-text" style="margin-top: 30px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_1" value="1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_1" value="1" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Excelente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_2" value="2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_2" value="2" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Bueno
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_3" value="3">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_3" value="3" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Regular
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_4" value="4">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_4" value="4" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Deficiente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_5" value="5">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_5" value="5" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Negativo
             </label>
@@ -341,7 +341,7 @@
         </div>
         
         <div class="card-footer">
-          <button type="button" class="btn btn-success btn-lg">Enviar</button>
+          <button type="button" class="btn btn-success btn-lg" @click="submit">Enviar</button>
         </div>
         
       </div>
@@ -352,33 +352,66 @@
 
 <script>
 export default {
-    data() {
-        return {
-        };
+  data() {
+    return {
+      q1: null,
+      q2: null,
+      q3: null,
+      q4: null,
+      q5: null,
+      q6: null,
+      q7: null,
+      q8: null,
+      q9: null,
+      formIsValid: true, // Bandera para verificar si el formulario es válido
+    };
+  },
+  methods: {
+    submit() {
+      // Verificar si el formulario es válido antes de enviar
+      if (this.validateForm()) {
+        // Lógica para enviar el formulario
+        this.sendForm();
+      } else {
+        // Mostrar mensajes de error o tomar otras acciones
+        console.error("El formulario no es válido. Por favor, complete todos los campos.");
+      }
     },
-    methods: 
-    {
-        async submit() {
+    validateForm() {
+      alert(this.q1)
+      // Lógica para validar el formulario
+      this.formIsValid = true; // Restablecer la bandera
 
-        const formData = new FormData();
+      // Verificar cada campo, aquí puedes agregar más campos según sea necesario
+      if (!this.q1 || !this.q2 || !this.q3 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || !this.q8 || !this.q9) {
+        this.formIsValid = false;
+      }
 
-        formData.append("section_id", this.section_input);
-                  
-
-        try {
-            const response = await axios.post(
-            "https://paneldecontrolaprende.cl/api/content/store",
-            formData,
-            {
-              headers: {
-                "Content-Type": "multipart/form-data",
-              },
-            }
-          );
-        } catch (error) {
-          console.error("Error al guardar ka encuesta:", error);
-        }
-      },
+      return this.formIsValid;
     },
-  };
+    async sendForm() {
+      const api_token = 'AtWYamNvDOfgDOEY6UbXgvGqDiRPR7QOt9Si1hbeMmat4g2Qfxzg7LlT5yzNz5LOozQbcA9uibaSTu4t';
+
+      const formData = new FormData();
+
+      formData.append("q1", this.q1);
+      // ... Agrega más campos al formData según sea necesario
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log("Encuesta enviada correctamente:", response);
+      } catch (error) {
+        console.error("Error al guardar la encuesta:", error);
+      }
+    },
+  },
+};
 </script>
