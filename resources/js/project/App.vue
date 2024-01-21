@@ -381,43 +381,35 @@ export default {
         this.sendForm();
       } else {
         if (!this.q1) {
-          alert("la respuesta de la pregunta N° 1 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 1 es obligatoria por favor rellenarla.");
         }
 
         if (!this.q2) {
-          alert("la respuesta de la pregunta N° 2 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 2 es obligatoria por favor rellenarla.");
         }
 
         if (!this.q3) {
-          alert("la respuesta de la pregunta N° 3 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 3 es obligatoria por favor rellenarla.");
         }
 
         if (!this.q4) {
-          alert("la respuesta de la pregunta N° 4 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 4 es obligatoria por favor rellenarla.");
         }
 
         if (!this.q5) {
-          alert("la respuesta de la pregunta N° 5 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 5 es obligatoria por favor rellenarla.");
         }
 
         if (!this.q6) {
-          alert("la respuesta de la pregunta N° 6 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 6 es obligatoria por favor rellenarla.");
         }
 
         if (!this.q7) {
-          alert("la respuesta de la pregunta N° 7 es obligatoria por favor rellenarla.");
+          alert("La respuesta de la pregunta N° 7 es obligatoria por favor rellenarla.");
         }
 
-        if (!this.q8_1) {
-          alert("la respuesta de la pregunta N° 8 es obligatoria por favor rellenarla.");
-        }
-
-        if (!this.q8_2) {
-          alert("la respuesta de la pregunta N° 8 es obligatoria por favor rellenarla.");
-        }
-
-        if (!this.q8_3) {
-          alert("la respuesta de la pregunta N° 8 es obligatoria por favor rellenarla.");
+        if (!this.q8_1 || !this.q8_2 || !this.q8_3) {
+          alert("La respuesta de la pregunta N° 8 es obligatoria por favor rellenarla.");
         }
       }
     },
