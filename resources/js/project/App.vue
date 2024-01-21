@@ -351,7 +351,7 @@
       <div class="alert alert-danger" role="alert">
         <h3>
           <center>
-            MUCHAS GRACIAS por responder.
+            El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
           </center>
         </h3>
       </div>
@@ -360,7 +360,7 @@
       <div class="alert alert-success" role="alert">
         <h3>
           <center>
-            Muchas gracias por contestar la encuesta. Hasta pronto.
+            MUCHAS GRACIAS por responder.
           </center>
         </h3>
       </div>
