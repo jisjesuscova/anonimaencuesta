@@ -261,15 +261,15 @@
             - Mantención
           </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_1" value="option1" v-model="q8_1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_1" value="1" v-model="q8_1">
             <label class="form-check-label" for="inlineRadio81">1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_2" value="option2" v-model="q8_1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_2" value="2" v-model="q8_1">
             <label class="form-check-label" for="inlineRadio81">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_3" value="option3" v-model="q8_1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_3" value="3" v-model="q8_1">
             <label class="form-check-label" for="inlineRadio81">3</label>
           </div>
           <p class="card-text"><hr></p>
@@ -277,15 +277,15 @@
             - Resolución de Conflictos
           </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_1" value="option1" v-model="q8_2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_1" value="1" v-model="q8_2">
             <label class="form-check-label" for="inlineRadio82">1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_2" value="option2" v-model="q8_2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_2" value="2" v-model="q8_2">
             <label class="form-check-label" for="inlineRadio82">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_3" value="option3" v-model="q8_2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_3" value="3" v-model="q8_2">
             <label class="form-check-label" for="inlineRadio82">3</label>
           </div>
           <p class="card-text"><hr></p>
@@ -293,20 +293,20 @@
             - Sistema Intranet
           </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_1" value="option1" v-model="q8_3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_1" value="1" v-model="q8_3">
             <label class="form-check-label" for="inlineRadio83">1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_2" value="option2" v-model="q8_3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_2" value="2" v-model="q8_3">
             <label class="form-check-label" for="inlineRadio83">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_3" value="option3" v-model="q8_3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_3" value="3" v-model="q8_3">
             <label class="form-check-label" for="inlineRadio83">3</label>
           </div>
           <p class="card-text"><hr></p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions84" id="q8_4_1" value="option4" v-model="q8_4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions84" id="q8_4_1" value="1" v-model="q8_4">
             <label class="form-check-label" for="inlineRadio84">No me interesa participar en capacitaciones</label>
           </div>
 
@@ -451,7 +451,7 @@ export default {
       }
 
       formData.append("user_id", 1);
-      formData.append("poll_id", 2);
+      formData.append("poll_id", 1);
       formData.append("question_id", 2);
       formData.append("answer", this.q2);
 
@@ -471,7 +471,7 @@ export default {
       }
 
       formData.append("user_id", 1);
-      formData.append("poll_id", 3);
+      formData.append("poll_id", 1);
       formData.append("question_id", 3);
       formData.append("answer", this.q3);
 
@@ -491,7 +491,7 @@ export default {
       }
 
       formData.append("user_id", 1);
-      formData.append("poll_id", 4);
+      formData.append("poll_id", 1);
       formData.append("question_id", 4);
       formData.append("answer", this.q4);
 
@@ -511,7 +511,7 @@ export default {
       }
 
       formData.append("user_id", 1);
-      formData.append("poll_id", 5);
+      formData.append("poll_id", 1);
       formData.append("question_id", 5);
       formData.append("answer", this.q5);
 
@@ -531,7 +531,7 @@ export default {
       }
 
       formData.append("user_id", 1);
-      formData.append("poll_id", 6);
+      formData.append("poll_id", 1);
       formData.append("question_id", 6);
       formData.append("answer", this.q6);
 
@@ -551,7 +551,7 @@ export default {
       }
 
       formData.append("user_id", 1);
-      formData.append("poll_id", 7);
+      formData.append("poll_id", 1);
       formData.append("question_id", 7);
       formData.append("answer", this.q7);
 
