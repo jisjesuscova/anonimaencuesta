@@ -8,7 +8,7 @@
       </div>
     </div>
     <hr>
-    <div class="container" v-if="is_active == 1">
+    <div class="container" v-if="is_active == 1 && is_success == 0">
       <div class="alert alert-danger" role="alert">
         La encuesta a continuación es completamente anónima.
       </div>
@@ -356,6 +356,15 @@
         </h3>
       </div>
     </div>
+    <div class="container" v-if="is_success == 1">
+      <div class="alert alert-success" role="alert">
+        <h3>
+          <center>
+            Muchas gracias por contestar la encuesta. Hasta pronto.
+          </center>
+        </h3>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -383,7 +392,8 @@ export default {
       q9_5: null,
       q9_6: null,
       formIsValid: true,
-      is_active: 0
+      is_active: 0,
+      is_success: 0,
     };
   },
   mounted() {
@@ -820,6 +830,9 @@ export default {
             },
           }
         );
+
+        this.is_success = 1;
+        
         console.log("Encuesta enviada correctamente:", response);
       } catch (error) {
         console.error("Error al guardar la encuesta:", error);
