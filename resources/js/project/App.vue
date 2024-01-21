@@ -392,7 +392,7 @@ export default {
       q9_5: null,
       q9_6: null,
       formIsValid: true,
-      is_active: 0,
+      is_active: 1,
       is_success: 0,
     };
   },
@@ -832,7 +832,7 @@ export default {
         );
 
         this.is_success = 1;
-        
+
         console.log("Encuesta enviada correctamente:", response);
       } catch (error) {
         console.error("Error al guardar la encuesta:", error);
