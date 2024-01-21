@@ -429,10 +429,12 @@ export default {
       const api_token = 'AtWYamNvDOfgDOEY6UbXgvGqDiRPR7QOt9Si1hbeMmat4g2Qfxzg7LlT5yzNz5LOozQbcA9uibaSTu4t';
 
       // Obtener el fragmento de la URL
-      const url_part = window.location.hash;
+      const full_url = window.location.href;
 
       // Remover el carácter "#" del fragmento
-      const user_id = url_part.slice(1);
+      const part_url = full_url.split('?');
+
+      const user_id = part_url[1];
 
       const formData = new FormData();
 
