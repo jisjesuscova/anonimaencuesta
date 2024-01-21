@@ -33,8 +33,5 @@
 
   <!-- jQuery -->
   <script src="/template/plugins/jquery/jquery.min.js"></script>
-  <!-- AdminLTE -->
-  <script src="/template/dist/js/adminlte.js"></script>
-
 </body>
 </html>
