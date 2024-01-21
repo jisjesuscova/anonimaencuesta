@@ -309,8 +309,76 @@
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_4_1" value="option1">
             <label class="form-check-label" for="inlineRadio1">No me interesa participar en capacitaciones</label>
           </div>
+
+          <p class="card-text" style="margin-top: 30px;"><hr></p>
+          <h3 class="card-title"> 9 - Proporciona cualquier comwentario adicional que puedas tener sobre tu experiencia laboral y cómo podríamos mejorar en:</h3>
+          <p class="card-text" style="margin-top: 5px;"><hr></p>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Recursos Humanos</label>
+            <textarea class="form-control" id="q9_1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Operaciones</label>
+            <textarea class="form-control" id="q9_2" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mantención de Equipos</label>
+            <textarea class="form-control" id="q9_3" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Siniestros</label>
+            <textarea class="form-control" id="q9_4" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Sistemas de Intranet</label>
+            <textarea class="form-control" id="q9_5" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comunicación con Casa Matriz</label>
+            <textarea class="form-control" id="q9_6" rows="3"></textarea>
+          </div>
+
         </div>
+        
+        <div class="card-footer">
+          <button type="button" class="btn btn-success btn-lg">Enviar</button>
+        </div>
+        
       </div>
+      
     </div>
   </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+        };
+    },
+    methods: 
+    {
+        async submit() {
+
+        const formData = new FormData();
+
+        formData.append("section_id", this.section_input);
+                  
+
+        try {
+            const response = await axios.post(
+            "https://paneldecontrolaprende.cl/api/content/store",
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          );
+        } catch (error) {
+          console.error("Error al guardar ka encuesta:", error);
+        }
+      },
+    },
+  };
+</script>
