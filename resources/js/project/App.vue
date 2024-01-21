@@ -8,7 +8,7 @@
       </div>
     </div>
     <hr>
-    <div class="container" v-if="is_active == true">
+    <div class="container" v-if="is_active == 1">
       <div class="alert alert-danger" role="alert">
         La encuesta a continuación es completamente anónima.
       </div>
@@ -347,7 +347,7 @@
       </div>
       
     </div>
-    <div class="container" v-if="is_active == false">
+    <div class="container" v-if="is_active == 0">
       <div class="alert alert-danger" role="alert">
         El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
       </div>
@@ -379,7 +379,7 @@ export default {
       q9_5: null,
       q9_6: null,
       formIsValid: true,
-      is_active: false
+      is_active: 0
     };
   },
   mounted() {
@@ -401,11 +401,11 @@ export default {
         const response = await axios.get(
           `https://jisparking.com/api/worker_poll/check?api_token=${api_token}&user_id=${user_id}&poll_id=1`
         );
-
+        console.log(response.data.status);
         if (response.data.status == 1) {
-          this.is_active = true;
+          this.is_active = 1;
         } else {
-          this.is_active = false;
+          this.is_active = 0;
         }
 
       } catch (error) {
