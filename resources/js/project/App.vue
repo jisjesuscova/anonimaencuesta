@@ -8,7 +8,7 @@
       </div>
     </div>
     <hr>
-    <div class="container">
+    <div class="container" v-if="is_active">
       <div class="alert alert-danger" role="alert">
         La encuesta a continuación es completamente anónima.
       </div>
@@ -347,6 +347,11 @@
       </div>
       
     </div>
+    <div class="container" v-if="is_active">
+      <div class="alert alert-danger" role="alert">
+        El enlace de la encuesta ya no se encuentra activo. Muchas gracias.
+      </div>
+    </div>
   </div>
 </template>
 
@@ -371,10 +376,51 @@ export default {
       q9_4: null,
       q9_5: null,
       q9_6: null,
-      formIsValid: true, // Bandera para verificar si el formulario es válido
+      formIsValid: true,
+      is_active: false
     };
   },
+  mounted() {
+    this.check();
+  },
   methods: {
+    async check() {
+      const api_token = 'AtWYamNvDOfgDOEY6UbXgvGqDiRPR7QOt9Si1hbeMmat4g2Qfxzg7LlT5yzNz5LOozQbcA9uibaSTu4t';
+
+      // Obtener el fragmento de la URL
+      const full_url = window.location.href;
+
+      // Remover el carácter "#" del fragmento
+      const part_url = full_url.split('?');
+
+      const user_id = part_url[1];
+
+      const formData = new FormData();
+
+      formData.append("user_id", user_id);
+      formData.append("poll_id", 1);
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        
+        if (response.data.status == 1) {
+          this.is_active = true;
+        } else {
+          this.is_active = false;
+        }
+
+      } catch (error) {
+        console.error("Error al validar la encuesta:", error);
+      }
+    },
     submit() {
       // Verificar si el formulario es válido antes de enviar
       if (this.validateForm()) {
