@@ -401,8 +401,8 @@ export default {
         const response = await axios.get(
           `https://jisparking.com/api/worker_poll/check?api_token=${api_token}&user_id=${user_id}&poll_id=1`
         );
-        console.log(response.data.status);
-        if (response.data.status == 1) {
+
+        if (response.data == 1) {
           this.is_active = 1;
         } else {
           this.is_active = 0;
