@@ -402,7 +402,7 @@ export default {
           `https://jisparking.com/api/worker_poll/check?api_token=${api_token}&user_id=${user_id}&poll_id=1`
         );
 
-        if (response.data.status === 1) {
+        if (response.data.status == 1) {
           this.is_active = true;
         } else {
           this.is_active = false;
