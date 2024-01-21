@@ -428,9 +428,15 @@ export default {
     async sendForm() {
       const api_token = 'AtWYamNvDOfgDOEY6UbXgvGqDiRPR7QOt9Si1hbeMmat4g2Qfxzg7LlT5yzNz5LOozQbcA9uibaSTu4t';
 
+    // Obtener el fragmento de la URL
+    const url_part = window.location.hash;
+
+    // Remover el carácter "#" del fragmento
+      const user_id = fragmentoUrl.slice(1);
+
       const formData = new FormData();
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 1);
       formData.append("answer", this.q1);
@@ -450,7 +456,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 2);
       formData.append("answer", this.q2);
@@ -470,7 +476,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 3);
       formData.append("answer", this.q3);
@@ -490,7 +496,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 4);
       formData.append("answer", this.q4);
@@ -510,7 +516,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 5);
       formData.append("answer", this.q5);
@@ -530,7 +536,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 6);
       formData.append("answer", this.q6);
@@ -550,7 +556,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 7);
       formData.append("answer", this.q7);
@@ -571,7 +577,7 @@ export default {
       }
 
       if (!this.q8_4) {
-        formData.append("user_id", 1);
+        formData.append("user_id", user_id);
         formData.append("poll_id", 1);
         formData.append("question_id", 81);
         formData.append("answer", this.q8_1);
@@ -593,7 +599,7 @@ export default {
       }
 
       if (!this.q8_4) {
-        formData.append("user_id", 1);
+        formData.append("user_id", user_id);
         formData.append("poll_id", 1);
         formData.append("question_id", 82);
         formData.append("answer", this.q8_2);
@@ -615,7 +621,7 @@ export default {
       }
 
       if (!this.q8_4) {
-        formData.append("user_id", 1);
+        formData.append("user_id", user_id);
         formData.append("poll_id", 1);
         formData.append("question_id", 83);
         formData.append("answer", this.q8_3);
@@ -636,7 +642,7 @@ export default {
         }
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 84);
       formData.append("answer", this.q8_4);
@@ -656,7 +662,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 91);
       formData.append("answer", this.q9_1);
@@ -676,7 +682,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 92);
       formData.append("answer", this.q9_2);
@@ -696,7 +702,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 93);
       formData.append("answer", this.q9_3);
@@ -716,7 +722,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 94);
       formData.append("answer", this.q9_4);
@@ -736,7 +742,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 95);
       formData.append("answer", this.q9_5);
@@ -756,7 +762,7 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      formData.append("user_id", 1);
+      formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 96);
       formData.append("answer", this.q9_6);
