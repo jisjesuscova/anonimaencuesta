@@ -428,11 +428,11 @@ export default {
     async sendForm() {
       const api_token = 'AtWYamNvDOfgDOEY6UbXgvGqDiRPR7QOt9Si1hbeMmat4g2Qfxzg7LlT5yzNz5LOozQbcA9uibaSTu4t';
 
-    // Obtener el fragmento de la URL
-    const url_part = window.location.hash;
+      // Obtener el fragmento de la URL
+      const url_part = window.location.hash;
 
-    // Remover el carácter "#" del fragmento
-      const user_id = fragmentoUrl.slice(1);
+      // Remover el carácter "#" del fragmento
+      const user_id = url_part.slice(1);
 
       const formData = new FormData();
 
