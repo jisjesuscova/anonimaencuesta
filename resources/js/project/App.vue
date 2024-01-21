@@ -20,31 +20,31 @@
           <h3 class="card-title"> 1 - ¿Como calificarías el ambiente de trabajo con tus(s) compañeros(s) en tu sucursal?</h3>
           <p class="card-text" style="margin-top: 30px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_1" value="1" v-model="q1">
+            <input class="form-check-input" type="radio" name="exampleRadios1" id="q1_1" value="1" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Excelente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_2" value="2" v-model="q1">
+            <input class="form-check-input" type="radio" name="exampleRadios1" id="q1_2" value="2" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Bueno
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_3" value="3" v-model="q1">
+            <input class="form-check-input" type="radio" name="exampleRadios1" id="q1_3" value="3" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Regular
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_4" value="4" v-model="q1">
+            <input class="form-check-input" type="radio" name="exampleRadios1" id="q1_4" value="4" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Deficiente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q1_5" value="5" v-model="q1">
+            <input class="form-check-input" type="radio" name="exampleRadios1" id="q1_5" value="5" v-model="q1">
             <label class="form-check-label" for="exampleRadios1">
               Negativo
             </label>
@@ -54,32 +54,32 @@
           <h3 class="card-title"> 2 - ¿Como calificarías el ambiente de trabajo con tus jefe directo?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q2_1" value="1" v-model="q2">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="q2_1" value="1" v-model="q2">
+            <label class="form-check-label" for="exampleRadios2">
               Excelente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q2_2" value="2" v-model="q2">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="q2_2" value="2" v-model="q2">
+            <label class="form-check-label" for="exampleRadios2">
               Bueno
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q2_3" value="3" v-model="q2">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="q2_3" value="3" v-model="q2">
+            <label class="form-check-label" for="exampleRadios2">
               Regular
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q2_4" value="4" v-model="q2">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="q2_4" value="4" v-model="q2">
+            <label class="form-check-label" for="exampleRadios2">
               Deficiente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q2_5" value="5" v-model="q2">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="q2_5" value="5" v-model="q2">
+            <label class="form-check-label" for="exampleRadios2">
               Negativo
             </label>
           </div>
@@ -88,32 +88,32 @@
           <h3 class="card-title"> 3 - ¿Qué aspectos específicos de tu ambiente laboral te hacen sentir más santisfecho/a?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q3_1" value="1" v-model="q3">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_1" value="1" v-model="q3">
+            <label class="form-check-label" for="exampleRadios3">
               Relaciones Interpersonales
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q3_2" value="2" v-model="q3">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_2" value="2" v-model="q3">
+            <label class="form-check-label" for="exampleRadios3">
               Condiciones de Trabajo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q3_3" value="3" v-model="q3">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_3" value="3" v-model="q3">
+            <label class="form-check-label" for="exampleRadios3">
               Oportunidades de Desarrollo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q3_4" value="4" v-model="q3">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_4" value="4" v-model="q3">
+            <label class="form-check-label" for="exampleRadios3">
               Bonificación Mensual
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q3_5" value="5" v-model="q3">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_5" value="5" v-model="q3">
+            <label class="form-check-label" for="exampleRadios3">
               Equilibrio Trabajo-Vida
             </label>
           </div>
@@ -122,32 +122,32 @@
           <h3 class="card-title"> 4 - ¿Cómo evalúas tu relación con tus compañeros de trabajo?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q4_1" value="1" v-model="q4">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="q4_1" value="1" v-model="q4">
+            <label class="form-check-label" for="exampleRadios4">
               Excelente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q4_2" value="2" v-model="q4">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="q4_2" value="2" v-model="q4">
+            <label class="form-check-label" for="exampleRadios4">
               Bueno
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q4_3" value="3" v-model="q4">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="q4_3" value="3" v-model="q4">
+            <label class="form-check-label" for="exampleRadios4">
               Regular
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q4_4" value="4" v-model="q4">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="q4_4" value="4" v-model="q4">
+            <label class="form-check-label" for="exampleRadios4">
               Deficiente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q4_5" value="5" v-model="q4">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="q4_5" value="5" v-model="q4">
+            <label class="form-check-label" for="exampleRadios4">
               Negativo
             </label>
           </div>
@@ -156,32 +156,32 @@
           <h3 class="card-title"> 5 - ¿Cómo evalúas tu relación con jefe directo, ante conflictos en la sucursal?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_1" value="1" v-model="q5">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios5" id="q5_1" value="1" v-model="q5">
+            <label class="form-check-label" for="exampleRadios5">
               Excelente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_2" value="2" v-model="q5">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios5" id="q5_2" value="2" v-model="q5">
+            <label class="form-check-label" for="exampleRadios5">
               Bueno
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_3" value="3" v-model="q5">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios5" id="q5_3" value="3" v-model="q5">
+            <label class="form-check-label" for="exampleRadios5">
               Regular
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_4" value="4" v-model="q5">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios5" id="q5_4" value="4" v-model="q5">
+            <label class="form-check-label" for="exampleRadios5">
               Deficiente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q5_5" value="5" v-model="q5">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios5" id="q5_5" value="5" v-model="q5">
+            <label class="form-check-label" for="exampleRadios5">
               Negativo
             </label>
           </div>
@@ -190,32 +190,32 @@
           <h3 class="card-title"> 6 - ¿Cómo evalúas el equilibrio entre tu vida laboral y personal?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_1" value="1" v-model="q6">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios6" id="q6_1" value="1" v-model="q6">
+            <label class="form-check-label" for="exampleRadios6">
               Excelente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_2" value="2" v-model="q6">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios6" id="q6_2" value="2" v-model="q6">
+            <label class="form-check-label" for="exampleRadios6">
               Bueno
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_3" value="3" v-model="q6">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios6" id="q6_3" value="3" v-model="q6">
+            <label class="form-check-label" for="exampleRadios6">
               Regular
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_4" value="4" v-model="q6">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios6" id="q6_4" value="4" v-model="q6">
+            <label class="form-check-label" for="exampleRadios6">
               Deficiente
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q6_5" value="5" v-model="q6">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios6" id="q6_5" value="5" v-model="q6">
+            <label class="form-check-label" for="exampleRadios6">
               Negativo
             </label>
           </div>
@@ -224,32 +224,32 @@
           <h3 class="card-title"> 7 - ¿Tu jornada laboral catual te permite compatibilizar con tu vida personal?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_1" value="1" v-model="q7">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios7" id="q7_1" value="1" v-model="q7">
+            <label class="form-check-label" for="exampleRadios7">
               Totalmente de acuerdo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_2" value="2" v-model="q7">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios7" id="q7_2" value="2" v-model="q7">
+            <label class="form-check-label" for="exampleRadios7">
               De acuerdo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_3" value="3" v-model="q7">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios7" id="q7_3" value="3" v-model="q7">
+            <label class="form-check-label" for="exampleRadios7">
               Ni de acuerdo ni en descuerdo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_4" value="4" v-model="q7">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios7" id="q7_4" value="4" v-model="q7">
+            <label class="form-check-label" for="exampleRadios7">
               En desacuerdo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="q7_5" value="5" v-model="q7">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios7" id="q7_5" value="5" v-model="q7">
+            <label class="form-check-label" for="exampleRadios7">
               Totalmente en desacuerdo
             </label>
           </div>
@@ -261,53 +261,53 @@
             - Mantención
           </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_1_1" value="option1" v-model="q8_1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_1" value="option1" v-model="q8_1">
+            <label class="form-check-label" for="inlineRadio81">1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_1_2" value="option2" v-model="q8_1">
-            <label class="form-check-label" for="inlineRadio2">2</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_2" value="option2" v-model="q8_1">
+            <label class="form-check-label" for="inlineRadio81">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_1_3" value="option3" v-model="q8_1">
-            <label class="form-check-label" for="inlineRadio3">3</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_3" value="option3" v-model="q8_1">
+            <label class="form-check-label" for="inlineRadio81">3</label>
           </div>
           <p class="card-text"><hr></p>
           <h4 style="font-size: 16px;">
             - Resolución de Conflictos
           </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_2_1" value="option1" v-model="q8_2">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_1" value="option1" v-model="q8_2">
+            <label class="form-check-label" for="inlineRadio82">1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_2_2" value="option2" v-model="q8_2">
-            <label class="form-check-label" for="inlineRadio2">2</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_2" value="option2" v-model="q8_2">
+            <label class="form-check-label" for="inlineRadio82">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_2_3" value="option3" v-model="q8_2">
-            <label class="form-check-label" for="inlineRadio3">3</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_3" value="option3" v-model="q8_2">
+            <label class="form-check-label" for="inlineRadio82">3</label>
           </div>
           <p class="card-text"><hr></p>
           <h4 style="font-size: 16px;">
             - Sistema Intranet
           </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_3_1" value="option1" v-model="q8_3">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_1" value="option1" v-model="q8_3">
+            <label class="form-check-label" for="inlineRadio83">1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_3_2" value="option2" v-model="q8_3">
-            <label class="form-check-label" for="inlineRadio2">2</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_2" value="option2" v-model="q8_3">
+            <label class="form-check-label" for="inlineRadio83">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_3_3" value="option3" v-model="q8_3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_3" value="option3" v-model="q8_3">
+            <label class="form-check-label" for="inlineRadio83">3</label>
           </div>
           <p class="card-text"><hr></p>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q8_4_1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">No me interesa participar en capacitaciones</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_4_1" value="option1">
+            <label class="form-check-label" for="inlineRadio83">No me interesa participar en capacitaciones</label>
           </div>
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
