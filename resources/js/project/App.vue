@@ -395,23 +395,12 @@ export default {
 
       const user_id = part_url[1];
 
-      const formData = new FormData();
-
-      formData.append("user_id", user_id);
-      formData.append("poll_id", 1);
-
       try {
         const response = await axios.get(
-          "https://jisparking.com/api/worker_poll/check?api_token=" + api_token,
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
+          `https://jisparking.com/api/worker_poll/check?api_token=${api_token}&user_id=${user_id}&poll_id=1`
         );
-        
-        if (response.data.status == 1) {
+
+        if (response.data.status === 1) {
           this.is_active = true;
         } else {
           this.is_active = false;
