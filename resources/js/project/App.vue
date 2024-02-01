@@ -85,38 +85,39 @@
           </div>
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
-          <h3 class="card-title"> 3 - ¿Qué aspectos específicos de tu ambiente laboral te hacen sentir más santisfecho/a?</h3>
+          <h3 class="card-title"> 3 - ¿Qué aspectos específicos de tu ambiente laboral te hacen sentir más satisfecho/a?</h3>
           <p class="card-text" style="margin-top: 50px;"><hr></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_1" value="1" v-model="q3">
-            <label class="form-check-label" for="exampleRadios3">
+            <input class="form-check-input" type="checkbox" name="exampleCheckboxes3" id="q3_1" value="1" v-model="q3_1">
+            <label class="form-check-label" for="q3_1">
               Relaciones Interpersonales
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_2" value="2" v-model="q3">
-            <label class="form-check-label" for="exampleRadios3">
+            <input class="form-check-input" type="checkbox" name="exampleCheckboxes3" id="q3_2" value="2" v-model="q3_2">
+            <label class="form-check-label" for="q3_2">
               Condiciones de Trabajo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_3" value="3" v-model="q3">
-            <label class="form-check-label" for="exampleRadios3">
+            <input class="form-check-input" type="checkbox" name="exampleCheckboxes3" id="q3_3" value="3" v-model="q3_3">
+            <label class="form-check-label" for="q3_3">
               Oportunidades de Desarrollo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_4" value="4" v-model="q3">
-            <label class="form-check-label" for="exampleRadios3">
+            <input class="form-check-input" type="checkbox" name="exampleCheckboxes3" id="q3_4" value="4" v-model="q3_4">
+            <label class="form-check-label" for="q3_4">
               Bonificación Mensual
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios3" id="q3_5" value="5" v-model="q3">
-            <label class="form-check-label" for="exampleRadios3">
+            <input class="form-check-input" type="checkbox" name="exampleCheckboxes3" id="q3_5" value="5" v-model="q3_5">
+            <label class="form-check-label" for="q3_5">
               Equilibrio Trabajo-Vida
             </label>
           </div>
+
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
           <h3 class="card-title"> 4 - ¿Cómo evalúas tu relación con tus compañeros de trabajo?</h3>
@@ -376,7 +377,11 @@ export default {
     return {
       q1: null,
       q2: null,
-      q3: null,
+      q3_1: null,
+      q3_2: null,
+      q3_3: null,
+      q3_4: null,
+      q3_5: null,
       q4: null,
       q5: null,
       q6: null,
@@ -440,7 +445,7 @@ export default {
           alert("La respuesta de la pregunta N° 2 es obligatoria por favor rellenarla.");
         }
 
-        if (!this.q3) {
+        if (!this.q3_1 && !this.q3_2 && !this.q3_3 && !this.q3_4 && !this.q3_5) {
           alert("La respuesta de la pregunta N° 3 es obligatoria por favor rellenarla.");
         }
 
@@ -470,7 +475,7 @@ export default {
       this.formIsValid = true; // Restablecer la bandera
 
       // Verificar cada campo, aquí puedes agregar más campos según sea necesario
-      if (!this.q1 || !this.q2 || !this.q3 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4)) {
+      if (!this.q1 || !this.q2 || !this.q3_1 || !this.q3_2 || !this.q3_3 || !this.q3_4 || !this.q3_5 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4)) {
         this.formIsValid = false;
       }
 
@@ -532,7 +537,87 @@ export default {
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 3);
-      formData.append("answer", this.q3);
+      formData.append("answer", this.q3_1);
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log("Encuesta enviada correctamente:", response);
+      } catch (error) {
+        console.error("Error al guardar la encuesta:", error);
+      }
+
+      formData.append("user_id", user_id);
+      formData.append("poll_id", 1);
+      formData.append("question_id", 3);
+      formData.append("answer", this.q3_2);
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log("Encuesta enviada correctamente:", response);
+      } catch (error) {
+        console.error("Error al guardar la encuesta:", error);
+      }
+
+      formData.append("user_id", user_id);
+      formData.append("poll_id", 1);
+      formData.append("question_id", 3);
+      formData.append("answer", this.q3_3);
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log("Encuesta enviada correctamente:", response);
+      } catch (error) {
+        console.error("Error al guardar la encuesta:", error);
+      }
+
+      formData.append("user_id", user_id);
+      formData.append("poll_id", 1);
+      formData.append("question_id", 3);
+      formData.append("answer", this.q3_4);
+
+      try {
+        const response = await axios.post(
+          "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log("Encuesta enviada correctamente:", response);
+      } catch (error) {
+        console.error("Error al guardar la encuesta:", error);
+      }
+
+      formData.append("user_id", user_id);
+      formData.append("poll_id", 1);
+      formData.append("question_id", 3);
+      formData.append("answer", this.q3_5);
 
       try {
         const response = await axios.post(
