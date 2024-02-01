@@ -473,10 +473,6 @@ export default {
         if (!this.q7) {
           alert("La respuesta de la pregunta N° 7 es obligatoria por favor rellenarla.");
         }
-
-        if (!this.q8_1 || !this.q8_2 || !this.q8_3) {
-          alert("La respuesta de la pregunta N° 8 es obligatoria por favor rellenarla.");
-        }
       }
     },
     validateForm() {
@@ -484,7 +480,7 @@ export default {
       this.formIsValid = true; // Restablecer la bandera
 
       // Verificar cada campo, aquí puedes agregar más campos según sea necesario
-      if (!this.q1 || !this.q2 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || (!this.q8_1 || !this.q8_2 || !this.q8_3)) {
+      if (!this.q1 || !this.q2 || !this.q4 || !this.q5 || !this.q6 || !this.q7) {
         this.formIsValid = false;
       }
 
