@@ -602,7 +602,7 @@ export default {
           formData8_4.append("user_id", user_id);
           formData8_4.append("poll_id", 1);
           formData8_4.append("question_id", 84);
-          formData8_4.append("answer", this.q8_4);
+          formData8_4.append("answer", 1);
           await this.sendFormData(formData8_4, api_token);
         } else {
           let formData8_1 = new FormData();
