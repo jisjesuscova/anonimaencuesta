@@ -445,10 +445,6 @@ export default {
           alert("La respuesta de la pregunta N° 2 es obligatoria por favor rellenarla.");
         }
 
-        if (!this.q3_1 && !this.q3_2 && !this.q3_3 && !this.q3_4 && !this.q3_5) {
-          alert("La respuesta de la pregunta N° 3 es obligatoria por favor rellenarla.");
-        }
-
         if (!this.q4) {
           alert("La respuesta de la pregunta N° 4 es obligatoria por favor rellenarla.");
         }
@@ -475,9 +471,8 @@ export default {
       this.formIsValid = true; // Restablecer la bandera
 
       // Verificar cada campo, aquí puedes agregar más campos según sea necesario
-      if (!this.q1 || !this.q2 || !this.q3_1 || !this.q3_2 || !this.q3_3 || !this.q3_4 || !this.q3_5 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4)) {
+      if (!this.q1 || !this.q2 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4)) {
         this.formIsValid = false;
-        alert(1);
       }
 
       return this.formIsValid;
