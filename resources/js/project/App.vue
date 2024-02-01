@@ -488,7 +488,7 @@ export default {
 
       const user_id = part_url[1];
 
-      var formData = new FormData();
+      const formData = new FormData();
 
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
@@ -510,17 +510,17 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
-      var formData = new FormData();
+      const formData2 = new FormData();
 
-      formData.append("user_id", user_id);
-      formData.append("poll_id", 1);
-      formData.append("question_id", 2);
-      formData.append("answer", this.q2);
-      console.log(formData)
+      formData2.append("user_id", user_id);
+      formData2.append("poll_id", 1);
+      formData2.append("question_id", 2);
+      formData2.append("answer", this.q2);
+
       try {
         const response = await axios.post(
           "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
-          formData,
+          formData2,
           {
             headers: {
               "Content-Type": "multipart/form-data",
@@ -531,8 +531,6 @@ export default {
       } catch (error) {
         console.error("Error al guardar la encuesta:", error);
       }
-
-      var formData = new FormData();
 
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
