@@ -342,7 +342,7 @@
         </div>
         
         <div class="card-footer">
-          <button type="button" class="btn btn-success btn-lg" @click="submit">Enviar</button>
+          <button type="button" class="btn btn-success btn-lg" @click="submit" v-if="status_button == 1">Enviar</button>
         </div>
         
       </div>
@@ -375,6 +375,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
+      status_button: 1,
       q1: null,
       q2: null,
       q3_1: null,
@@ -436,7 +437,11 @@ export default {
       if (this.validateForm()) {
         // Lógica para enviar el formulario
         this.sendForm();
+
+        this.status_button = 0;
       } else {
+        this.status_button = 1;
+
         if (!this.q1) {
           alert("La respuesta de la pregunta N° 1 es obligatoria por favor rellenarla.");
         }
@@ -511,7 +516,7 @@ export default {
           let formData3_1 = new FormData();
           formData3_1.append("user_id", user_id);
           formData3_1.append("poll_id", 1);
-          formData3_1.append("question_id", 3);
+          formData3_1.append("question_id", 31);
           formData3_1.append("answer", 1);
           await this.sendFormData(formData3_1, api_token);
         }
@@ -521,7 +526,7 @@ export default {
           let formData3_2 = new FormData();
           formData3_2.append("user_id", user_id);
           formData3_2.append("poll_id", 1);
-          formData3_2.append("question_id", 3);
+          formData3_2.append("question_id", 32);
           formData3_2.append("answer", 2);
           await this.sendFormData(formData3_2, api_token);
         }
@@ -531,7 +536,7 @@ export default {
           let formData3_3 = new FormData();
           formData3_3.append("user_id", user_id);
           formData3_3.append("poll_id", 1);
-          formData3_3.append("question_id", 3);
+          formData3_3.append("question_id", 33);
           formData3_3.append("answer", 3);
           await this.sendFormData(formData3_3, api_token);
         }
@@ -541,7 +546,7 @@ export default {
           let formData3_4 = new FormData();
           formData3_4.append("user_id", user_id);
           formData3_4.append("poll_id", 1);
-          formData3_4.append("question_id", 3);
+          formData3_4.append("question_id", 34);
           formData3_4.append("answer", 4);
           await this.sendFormData(formData3_4, api_token);
         }
@@ -551,7 +556,7 @@ export default {
           let formData3_5 = new FormData();
           formData3_5.append("user_id", user_id);
           formData3_5.append("poll_id", 1);
-          formData3_5.append("question_id", 3);
+          formData3_5.append("question_id", 35);
           formData3_5.append("answer", 5);
           await this.sendFormData(formData3_5, api_token);
         }
