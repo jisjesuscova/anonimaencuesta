@@ -488,7 +488,7 @@ export default {
 
       const user_id = part_url[1];
 
-      const formData = new FormData();
+      var formData = new FormData();
 
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
@@ -510,6 +510,8 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
+      var formData = new FormData();
+
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 2);
@@ -530,6 +532,8 @@ export default {
         console.error("Error al guardar la encuesta:", error);
       }
 
+      var formData = new FormData();
+      
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 3);
