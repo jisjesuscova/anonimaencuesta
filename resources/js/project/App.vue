@@ -257,59 +257,66 @@
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
           <h3 class="card-title"> 8 - ¿Te gustaría participar en capacitaciones de alguno de los siguientes aspectos? Enumera del más importante al menos importante, siendo (1) el más importante y (3) el menos importante.</h3>
+          
           <p class="card-text" style="margin-top: 50px;"><hr></p>
-          <h4 style="font-size: 16px;">
-            - Mantención
-          </h4>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_1" value="1" v-model="q8_1">
-            <label class="form-check-label" for="inlineRadio81">1</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_1" value="1" v-model="q8_answer">
+            <label class="form-check-label" for="inlineRadio81">Si</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_2" value="2" v-model="q8_1">
-            <label class="form-check-label" for="inlineRadio81">2</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_4_1" value="2" v-model="q8_answer">
+            <label class="form-check-label" for="inlineRadio81">No</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_3" value="3" v-model="q8_1">
-            <label class="form-check-label" for="inlineRadio81">3</label>
-          </div>
-          <p class="card-text"><hr></p>
-          <h4 style="font-size: 16px;">
-            - Resolución de Conflictos
-          </h4>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_1" value="1" v-model="q8_2">
-            <label class="form-check-label" for="inlineRadio82">1</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_2" value="2" v-model="q8_2">
-            <label class="form-check-label" for="inlineRadio82">2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_3" value="3" v-model="q8_2">
-            <label class="form-check-label" for="inlineRadio82">3</label>
-          </div>
-          <p class="card-text"><hr></p>
-          <h4 style="font-size: 16px;">
-            - Sistema Intranet
-          </h4>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_1" value="1" v-model="q8_3">
-            <label class="form-check-label" for="inlineRadio83">1</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_2" value="2" v-model="q8_3">
-            <label class="form-check-label" for="inlineRadio83">2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_3" value="3" v-model="q8_3">
-            <label class="form-check-label" for="inlineRadio83">3</label>
-          </div>
-          <p class="card-text"><hr></p>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions84" id="q8_4_1" value="1" v-model="q8_4">
-            <label class="form-check-label" for="inlineRadio84">No me interesa participar en capacitaciones</label>
-          </div>
+          
+          
+            <p class="card-text" style="margin-top: 50px;" v-if="q8_answer == 1"><hr></p>
+            <h4 style="font-size: 16px;" v-if="q8_answer == 1">
+              - Mantención
+            </h4>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_1" value="1" v-model="q8_1">
+              <label class="form-check-label" for="inlineRadio81">1</label>
+            </div>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_2" value="2" v-model="q8_1">
+              <label class="form-check-label" for="inlineRadio81">2</label>
+            </div>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions81" id="q8_1_3" value="3" v-model="q8_1">
+              <label class="form-check-label" for="inlineRadio81">3</label>
+            </div>
+            <p class="card-text" v-if="q8_answer == 1"><hr></p>
+            <h4 style="font-size: 16px;" v-if="q8_answer == 1">
+              - Resolución de Conflictos
+            </h4>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_1" value="1" v-model="q8_2">
+              <label class="form-check-label" for="inlineRadio82">1</label>
+            </div>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_2" value="2" v-model="q8_2">
+              <label class="form-check-label" for="inlineRadio82">2</label>
+            </div>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions82" id="q8_2_3" value="3" v-model="q8_2">
+              <label class="form-check-label" for="inlineRadio82">3</label>
+            </div>
+            <p class="card-text" v-if="q8_answer == 1"><hr></p>
+            <h4 style="font-size: 16px;" v-if="q8_answer == 1">
+              - Sistema Intranet
+            </h4>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_1" value="1" v-model="q8_3">
+              <label class="form-check-label" for="inlineRadio83">1</label>
+            </div>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_2" value="2" v-model="q8_3">
+              <label class="form-check-label" for="inlineRadio83">2</label>
+            </div>
+            <div class="form-check form-check-inline" v-if="q8_answer == 1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions83" id="q8_3_3" value="3" v-model="q8_3">
+              <label class="form-check-label" for="inlineRadio83">3</label>
+            </div>
 
           <p class="card-text" style="margin-top: 30px;"><hr></p>
           <h3 class="card-title"> 9 - Proporciona cualquier comentario adicional que puedas tener sobre tu experiencia laboral y cómo podríamos mejorar en:</h3>
@@ -375,6 +382,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
+      q8_answer: 0,
       status_button: 1,
       q1: null,
       q2: null,
@@ -593,9 +601,15 @@ export default {
         formData7.append("answer", this.q7);
         await this.sendFormData(formData7, api_token);
 
-        // Encuesta 8
-        if (!this.q8_4) {
-            let formData8_1 = new FormData();
+        if(this.q8_answer == 2) {
+          let formData8_4 = new FormData();
+          formData8_4.append("user_id", user_id);
+          formData8_4.append("poll_id", 1);
+          formData8_4.append("question_id", 84);
+          formData8_4.append("answer", this.q8_4);
+          await this.sendFormData(formData8_4, api_token);
+        } else {
+          let formData8_1 = new FormData();
             formData8_1.append("user_id", user_id);
             formData8_1.append("poll_id", 1);
             formData8_1.append("question_id", 81);
@@ -615,13 +629,6 @@ export default {
             formData8_3.append("question_id", 83);
             formData8_3.append("answer", this.q8_3);
             await this.sendFormData(formData8_3, api_token);
-        } else {
-          let formData8_4 = new FormData();
-          formData8_4.append("user_id", user_id);
-          formData8_4.append("poll_id", 1);
-          formData8_4.append("question_id", 84);
-          formData8_4.append("answer", this.q8_4);
-          await this.sendFormData(formData8_4, api_token);
         }
 
         // Encuesta 9
