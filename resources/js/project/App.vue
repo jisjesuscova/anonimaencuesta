@@ -477,6 +477,7 @@ export default {
       // Verificar cada campo, aquí puedes agregar más campos según sea necesario
       if (!this.q1 || !this.q2 || !this.q3_1 || !this.q3_2 || !this.q3_3 || !this.q3_4 || !this.q3_5 || !this.q4 || !this.q5 || !this.q6 || !this.q7 || ((!this.q8_1 || !this.q8_2 || !this.q8_3) && !this.q8_4)) {
         this.formIsValid = false;
+        alert(1);
       }
 
       return this.formIsValid;
