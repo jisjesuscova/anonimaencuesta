@@ -506,44 +506,55 @@ export default {
         await this.sendFormData(formData2, api_token);
 
         // Encuesta 3, pregunta 1
-        let formData3_1 = new FormData();
-        formData3_1.append("user_id", user_id);
-        formData3_1.append("poll_id", 1);
-        formData3_1.append("question_id", 3);
-        formData3_1.append("answer", this.q3_1);
-        await this.sendFormData(formData3_1, api_token);
 
-        // Encuesta 3, pregunta 2
-        let formData3_2 = new FormData();
-        formData3_2.append("user_id", user_id);
-        formData3_2.append("poll_id", 1);
-        formData3_2.append("question_id", 3);
-        formData3_2.append("answer", this.q3_2);
-        await this.sendFormData(formData3_2, api_token);
+        if (this.q3_1) {
+          let formData3_1 = new FormData();
+          formData3_1.append("user_id", user_id);
+          formData3_1.append("poll_id", 1);
+          formData3_1.append("question_id", 3);
+          formData3_1.append("answer", 1);
+          await this.sendFormData(formData3_1, api_token);
+        }
 
-        // Encuesta 3, pregunta 3
-        let formData3_3 = new FormData();
-        formData3_3.append("user_id", user_id);
-        formData3_3.append("poll_id", 1);
-        formData3_3.append("question_id", 3);
-        formData3_3.append("answer", this.q3_3);
-        await this.sendFormData(formData3_3, api_token);
+        if (this.q3_2) {
+          // Encuesta 3, pregunta 2
+          let formData3_2 = new FormData();
+          formData3_2.append("user_id", user_id);
+          formData3_2.append("poll_id", 1);
+          formData3_2.append("question_id", 3);
+          formData3_2.append("answer", 2);
+          await this.sendFormData(formData3_2, api_token);
+        }
 
-        // Encuesta 3, pregunta 4
-        let formData3_4 = new FormData();
-        formData3_4.append("user_id", user_id);
-        formData3_4.append("poll_id", 1);
-        formData3_4.append("question_id", 3);
-        formData3_4.append("answer", this.q3_4);
-        await this.sendFormData(formData3_4, api_token);
+        if(this.q3_3) {
+          // Encuesta 3, pregunta 3
+          let formData3_3 = new FormData();
+          formData3_3.append("user_id", user_id);
+          formData3_3.append("poll_id", 1);
+          formData3_3.append("question_id", 3);
+          formData3_3.append("answer", 3);
+          await this.sendFormData(formData3_3, api_token);
+        }
 
-        // Encuesta 3, pregunta 5
-        let formData3_5 = new FormData();
-        formData3_5.append("user_id", user_id);
-        formData3_5.append("poll_id", 1);
-        formData3_5.append("question_id", 3);
-        formData3_5.append("answer", this.q3_5);
-        await this.sendFormData(formData3_5, api_token);
+        if(this.q3_4) {
+          // Encuesta 3, pregunta 4
+          let formData3_4 = new FormData();
+          formData3_4.append("user_id", user_id);
+          formData3_4.append("poll_id", 1);
+          formData3_4.append("question_id", 3);
+          formData3_4.append("answer", 4);
+          await this.sendFormData(formData3_4, api_token);
+        }
+
+        if(this.q3_5) {
+          // Encuesta 3, pregunta 5
+          let formData3_5 = new FormData();
+          formData3_5.append("user_id", user_id);
+          formData3_5.append("poll_id", 1);
+          formData3_5.append("question_id", 3);
+          formData3_5.append("answer", 5);
+          await this.sendFormData(formData3_5, api_token);
+        }
 
         // Encuesta 4
         let formData4 = new FormData();
