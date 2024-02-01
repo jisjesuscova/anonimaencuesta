@@ -516,7 +516,7 @@ export default {
       formData.append("poll_id", 1);
       formData.append("question_id", 2);
       formData.append("answer", this.q2);
-
+      console.log(formData)
       try {
         const response = await axios.post(
           "https://jisparking.com/api/worker_poll/store?api_token=" + api_token,
@@ -533,7 +533,7 @@ export default {
       }
 
       var formData = new FormData();
-      
+
       formData.append("user_id", user_id);
       formData.append("poll_id", 1);
       formData.append("question_id", 3);
